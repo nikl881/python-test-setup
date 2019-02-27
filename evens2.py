@@ -1,15 +1,10 @@
 def even_number_of_evens(numbers):
 
-    # Check to see if the list is empty
+
     if numbers == []:
         return False
-    else:
-        # Set a `number_of_evens` variable that will be incremented each time
-        # an even number is found
-        evens = 0
+    else: evens = 0
         
-    # Iterate of over each item and if it's an even number, increment the
-    # `evens` variable
     for number in numbers:
         if number % 2 == 0:
             evens += 1
@@ -18,8 +13,6 @@ def even_number_of_evens(numbers):
         return False
     else:
         return evens % 2 == 0
-
-# Our set of test cases
 
 assert even_number_of_evens([]) == False, "No numbers"
 assert even_number_of_evens([2]) == False, "One even number"
